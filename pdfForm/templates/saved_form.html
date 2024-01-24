@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">    
+    <title>Salary slip</title>
+  </head>
+  <body>
+    <div class="container my-5 text-center">
+      <h3>Company name: {{company_name}}</h3>
+      <h4>Salary Slip for month {{month}}</h4>
+      <hr>
+      <div class="row d-flex justify-content-center">
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+          <p>Employee ID: {{employee_id}}</p>
+          <p>Name: {{name}}</p>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+          <p>Designation: {{designation}}</p>
+          <p>Department: {{department}}</p>
+        </div>
+      </div>
+      <p>Joining date: {{joining_date}}</p>
+       <hr>
+      <div class="row d-flex justify-content-center">
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+          <p>Basic salary: {{basic_salary}}</p>
+          <p>Deduction: {{deduction}}</p>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+          <p>Allowances: {{allowances}}</p>
+          <p>Net salary: {{net_salary}}</p>
+        </div>
+      </div>
+      <p>Amount in words: {{amount_in_words}}</p>
+       <hr>
+      <div class="row d-flex justify-content-center">
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+          <p>Prepared by: {{prepared_by}}</p>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+          <p>Approved by: {{approved_by}}</p>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
